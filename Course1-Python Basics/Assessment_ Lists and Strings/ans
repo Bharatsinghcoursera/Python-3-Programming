@@ -1,0 +1,103 @@
+sequences-10-1: What will the output be for the following code?
+
+let = "z"
+let_two = "p"
+c = let_two + let
+m = c*5
+print(m)
+A. zpzpzpzpzp
+B. zzzzzppppp
+C. pzpzpzpzpz
+D. pppppzzzzz
+E. None of the above, an error will occur.
+
+Ans:C
+✔️ Yes, because let_two was put before let, c has "pz" and then that is repeated five times.
+
+2.Write a program that extracts the last three items in the list sports and assigns it to the variable last. Make sure to write your code so that it works no matter how many items are in the list.
+sports = ['cricket', 'football', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
+last= sports[-3:]  
+print("The last N elements of list are : " + str(last)) 
+
+3.Write code that combines the following variables so that the sentence “You are doing a great job, keep it up!” is assigned to the variable message. Do not edit the values assigned to by, az, io, or qy.
+ by = "You are"
+az = "doing a great "
+io = "job"
+qy = "keep it up!"
+message=(by+az+io+qy)
+print(message)
+
+sequences-10-2: What will the output be for the following code?
+
+ls = ['run', 'world', 'travel', 'lights', 'moon', 'baseball', 'sea']
+new = ls[2:4]
+print(new)
+A. ['travel', 'lights', 'moon']
+B. ['world', 'travel', 'lights']
+C. ['travel', 'lights']
+D. ['world', 'travel']
+ans:c
+✔️ Yes, python is a zero-index based language and slices are inclusive of the first index and exclusive of the second.
+Multiple Choice (assess_question2_1_1_4)
+
+Score: 1.0 / 1
+Comment: autograded
+
+sequences-10-3: What is the type of m?
+
+l = ['w', '7', 0, 9]
+m = l[1:2]
+A. string
+B. integer
+C. float
+D. list
+ans:D
+✔️ Yes, a slice returns a list no matter how large the slice.
+Multiple Choice (assess_question2_1_1_5)
+
+Score: 1.0 / 1
+Comment: autograded
+
+sequences-10-4: What is the type of m?
+
+l = ['w', '7', 0, 9]
+m = l[1]
+A. string
+B. integer
+C. float
+D. list
+ans:A
+✔️ Yes, the quotes around the number mean that this is a string.
+Multiple Choice (assess_question2_1_1_6)
+
+Score: 1.0 / 1
+Comment: autograded
+
+sequences-10-5: What is the type of x?
+
+b = "My, what a lovely day"
+x = b.split(',')
+A. string
+B. integer
+C. float
+D. list
+Ans:D
+✔️ Yes, the .split() method returns a list.
+Multiple Choice (assess_question2_1_1_7)
+
+Score: 1.0 / 1
+Comment: autograded
+
+sequences-10-6: What is the type of a?
+
+b = "My, what a lovely day"
+x = b.split(',')
+z = "".join(x)
+y = z.split()
+a = "".join(y)
+A. string
+B. integer
+C. float
+D. list
+Ans:A
+✔️ Yes, the string is split into a list, then joined back into a string, then split again, and finally joined back into a string.
